@@ -134,7 +134,7 @@ export default function Home() {
                 <div className="flex w-max gap-4">
                   <div className="w-[280px]">
                     <PhotoPlaceholder
-                      src="/images/body-hero.jpg"
+                      src="/images/body-hero.png"
                       label="施術空間"
                       sublabel="柔らかな光と静けさ"
                       aspect="aspect-[4/3]"
@@ -143,7 +143,7 @@ export default function Home() {
                   </div>
                   <div className="w-[280px]">
                     <PhotoPlaceholder
-                      src="/images/body-hero.jpg"
+                      src="/images/body-hero.png"
                       label="手当て"
                       sublabel="触れることで整える"
                       aspect="aspect-[4/3]"
@@ -151,7 +151,7 @@ export default function Home() {
                   </div>
                   <div className="w-[280px]">
                     <PhotoPlaceholder
-                      src="/images/body-hero.jpg"
+                      src="/images/body-hero.png"
                       label="カウンセリング"
                       sublabel="安心して話せる時間"
                       aspect="aspect-[4/3]"
@@ -179,7 +179,7 @@ export default function Home() {
               >
                 <div className="p-4">
                   <PhotoPlaceholder
-                    src="/images/uterus-hero.jpg"
+                    src="/images/uterus-hero.png"
                     label="子宮からのヒーリング"
                     sublabel="女性のリズムをやさしく整える"
                     aspect="aspect-[16/10]"
@@ -208,7 +208,7 @@ export default function Home() {
               >
                 <div className="p-4">
                   <PhotoPlaceholder
-                    src="/images/body-hero.jpg"
+                    src="/images/body-hero.png"
                     label="全身ヒーリング"
                     sublabel="手当てのみの全身ケア"
                     aspect="aspect-[16/10]"

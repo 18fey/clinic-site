@@ -17,7 +17,7 @@ export default function UterusHealingPage() {
           <div className="relative h-[420px]">
             {/* 背景画像（固定） */}
             <Image
-              src="/images/uterus-hero.jpg"
+              src="/images/uterus-hero.png"
               alt="子宮からのヒーリング"
               fill
               className="object-cover"

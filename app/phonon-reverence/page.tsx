@@ -17,7 +17,7 @@ export default function PhononReverencePage() {
           <div className="relative h-[420px]">
             {/* 背景画像（固定） */}
             <Image
-              src="/images/body-hero.jpg"
+              src="/images/body-hero.png"
               alt="全身ヒーリング"
               fill
               className="object-cover"
