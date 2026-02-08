@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
@@ -14,16 +15,52 @@ const notoSans = Noto_Sans_JP({
   variable: "--font-sans",
 });
 
+/**
+ * 🔧 本番ドメインに必ず変更すること
+ * 例: https://healing-studio.jp
+ */
+const siteUrl = "https://YOUR-DOMAIN.com";
+
 export const metadata: Metadata = {
-  title: "CLINIC NAME",
-  description: "Clinic site",
+  metadataBase: new URL(siteUrl),
+
+  title: "HEALING STUDIO | 株式会社tweedia",
+  description:
+    "株式会社tweediaが提供するヒーリング／ボディワーク。静かな空間で、からだの声に寄り添う時間を。",
+
+  openGraph: {
+    title: "HEALING STUDIO | 株式会社tweedia",
+    description:
+      "ヒーリング／ボディワーク。静かな空間で、からだの声に寄り添う時間を。",
+    url: siteUrl,
+    siteName: "HEALING STUDIO",
+    locale: "ja_JP",
+    type: "website",
+    // OGP画像を用意したら有効化
+    // images: [
+    //   {
+    //     url: "/og.png",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "HEALING STUDIO",
+    //   },
+    // ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "HEALING STUDIO | 株式会社tweedia",
+    description:
+      "株式会社tweediaが提供するヒーリング／ボディワーク。",
+    // images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="ja">
       <body
