@@ -63,12 +63,14 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-2">
-                <a
-                  className="rounded-full bg-neutral-900 px-4 py-2 text-sm text-white shadow-sm hover:bg-neutral-800"
-                  href="#contact"
-                >
-                  予約・相談
-                </a>
+               <a
+  className="rounded-full bg-neutral-900 px-4 py-2 text-sm text-white shadow-sm hover:bg-neutral-800"
+  href="https://www.instagram.com/yonipichu_dr.yuki?igsh=dWFncmg3endtNnpw"
+  target="_blank"
+  rel="noreferrer"
+>
+  予約・相談
+</a>
               </div>
             </div>
           </div>
@@ -326,34 +328,40 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact">
-          <div className="px-5 py-14">
-            <h2 className="text-2xl font-semibold">予約・お問い合わせ</h2>
-            <p className="mt-2 text-neutral-600">
-              予約・ご相談はフォームから承っています（施術場所：ビジネスエアポート代官山 内
-              個室）。
-            </p>
+<section id="contact">
+  <div className="px-5 py-14">
+    <h2 className="text-2xl font-semibold">予約・お問い合わせ</h2>
 
-            <div className="mt-8 grid gap-6">
-              <div className="rounded-2xl border border-neutral-200/70 bg-white p-6 shadow-sm">
-                <div className="text-sm font-medium">フォーム</div>
-                <p className="mt-2 text-sm text-neutral-600">
-                  ここは後でフォーム連携（Formspree等）に置き換えるよ。
-                </p>
-                <a
-                  className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-neutral-900 px-5 py-2.5 text-sm text-white shadow-sm hover:bg-neutral-800"
-                  href="#"
-                >
-                  フォームを開く
-                </a>
+    <p className="mt-2 text-neutral-600">
+      ご予約・ご相談はInstagramのDMより承っています（施術場所：ビジネスエアポート代官山 内 個室）。
+    </p>
 
-                <div className="mt-3 text-center text-[11px] tracking-[0.18em] text-neutral-400">
-                  REPLY WITHIN 24H (例)
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="mt-8 grid gap-6">
+      <div className="rounded-2xl border border-neutral-200/70 bg-white p-6 shadow-sm">
+        <div className="text-sm font-medium">Instagram DM</div>
+
+        <p className="mt-2 text-sm leading-7 text-neutral-600">
+          内容を確認のうえ、順次ご案内いたします。<br />
+          はじめての方は「お名前／ご希望日時（候補）／気になっていること」を添えてください。
+        </p>
+
+        <a
+          className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-neutral-900 px-5 py-2.5 text-sm text-white shadow-sm hover:bg-neutral-800"
+          href="https://www.instagram.com/yonipichu_dr.yuki?igsh=dWFncmg3endtNnpw"
+          target="_blank"
+          rel="noreferrer"
+        >
+          InstagramでDMする
+        </a>
+
+        <div className="mt-3 text-center text-[11px] tracking-[0.18em] text-neutral-400">
+          REPLY WITHIN 24H（目安）
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Footer */}
         <footer className="border-t border-neutral-200/60 bg-[#fbf8f2]">
