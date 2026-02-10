@@ -10,12 +10,13 @@ const serif = Noto_Serif_JP({
 
 export default function PhononReverencePage() {
   return (
-    <main className={`${serif.className} min-h-screen bg-[#fbf8f2] text-neutral-900`}>
+    <main
+      className={`${serif.className} min-h-screen bg-[#fbf8f2] text-neutral-900`}
+    >
       <div className="mx-auto w-full max-w-[430px]">
-        {/* ① First View */}
+        {/* ① First View（ここは変更しない） */}
         <section className="relative overflow-hidden">
           <div className="relative h-[420px]">
-            {/* 背景画像（固定） */}
             <Image
               src="/images/body-hero.png"
               alt="全身ヒーリング"
@@ -37,12 +38,13 @@ export default function PhononReverencePage() {
                 <p className="text-[11px] tracking-[0.28em] text-neutral-600/90">
                   PHONON REVERENCE
                 </p>
-                <h1 className="mt-3 text-[26px] leading-[1.35] font-semibold text-neutral-900">
+                <h1 className="mt-3 text-[26px] font-semibold leading-[1.35] text-neutral-900">
                   全身から、調和を整える。
                 </h1>
                 <p className="mt-4 text-[14px] leading-7 text-neutral-700">
-                  男女問わず受けていただける、<br />
-                  手当てのみのヒーリング。
+                  男女問わず受けていただける、
+                  <br />
+                  ヒーリング。
                 </p>
               </div>
             </div>
@@ -51,114 +53,234 @@ export default function PhononReverencePage() {
           <div className="h-10 bg-gradient-to-b from-transparent to-[#fbf8f2]" />
         </section>
 
-        {/* ② phonon reverence とは */}
+        {/* ② phonon reverence とは（ここは変更しない） */}
         <section className="px-6 pt-8">
           <h2 className="text-[18px] font-semibold tracking-wide text-neutral-900">
             phonon reverence とは
           </h2>
           <div className="mt-4 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
             <p className="text-[14px] leading-8 text-neutral-700">
-              人の身体は、<br />
-              目に見える肉体だけでなく、<br />
-              微細な振動やリズムによって<br />
+              人の身体は、
+              <br />
+              目に見える肉体だけでなく、
+              <br />
+              微細な振動やリズムによって
+              <br />
               成り立っていると考えられてきました。
               <br />
               <br />
-              phonon reverence は、<br />
-              お薬や医療機器を使わず、<br />
-              手当てのみで行う全身ヒーリングです。
+              phonon reverence は、
+              <br />
+              お薬や医療機器を使わない、
+              <br />
+              全身ヒーリングです。
               <br />
               <br />
-              その方の状態を感じ取りながら、<br />
-              必要な部分にやさしく手を当て、<br />
+              その方の状態を感じ取りながら、
+              <br />
+              必要な部分にやさしく手を当て、
+              <br />
               全身の流れと調和を整えていきます。
             </p>
           </div>
         </section>
 
-        {/* ③ こんな方に */}
-        <section className="px-6 pt-10">
-          <h2 className="text-[18px] font-semibold tracking-wide text-neutral-900">
-            こんな方に
-          </h2>
-
-          <div className="mt-4 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
-            <ul className="space-y-3 text-[14px] leading-7 text-neutral-700">
-              {[
-                "理由は分からないけれど、整えたい",
-                "緊張や疲れが抜けにくい",
-                "心身をリセットする時間がほしい",
-                "性別を問わず受けられるケアを探している",
-              ].map((t) => (
-                <li key={t} className="flex gap-3">
-                  <span className="mt-[9px] h-[5px] w-[5px] rounded-full bg-neutral-500/70" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* ④ セッションの考え方 */}
-        <section className="px-6 pt-10">
-          <h2 className="text-[18px] font-semibold tracking-wide text-neutral-900">
-            セッションの考え方
-          </h2>
-          <div className="mt-4 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
-            <p className="text-[14px] leading-8 text-neutral-700">
-              変化の感じ方には個人差があり、<br />
-              すぐに深いリラックスを感じる方もいれば、<br />
-              回数を重ねる中で変化に気づく方もいます。
-              <br />
-              <br />
-              何かを足すのではなく、<br />
-              内側に本来備わっている力が<br />
-              自然に働き出すことを大切にしています。
-            </p>
-          </div>
-        </section>
-
-        {/* ⑤ メニュー */}
+        {/* ③ メニュー詳細（追加ぶん：ここから） */}
         <section className="px-6 pt-10">
           <h2 className="text-[18px] font-semibold tracking-wide text-neutral-900">
             メニュー
           </h2>
 
+          {/* 初回 120分 */}
           <div className="mt-4 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
-            <div className="space-y-5">
-              <div>
-                <div className="text-[15px] font-semibold text-neutral-900">
-                  Herix Power Therapy Body
+            <div className="text-[15px] font-semibold text-neutral-900">
+              🌿 全身ヒーリング 120分（初回）
+            </div>
+            <div className="mt-1 text-[13px] text-neutral-700">
+              ¥143,000（税込）
+            </div>
+
+            <div className="mt-4 space-y-4 text-[14px] leading-8 text-neutral-700">
+              <p>
+                忙しさやストレスが続くと、気づかないうちに
+                <br />
+                身体にも心にも力が入り、
+                <br />
+                呼吸の浅さや、肩・背中・骨盤のこわばりが生まれます。
+                <br />
+                それは、身体の自然な反応です。
+              </p>
+
+              <p>
+                このケアでは、まず約60分ほどゆっくりとお話をお聞きし、
+                <br />
+                その後、50分前後の全身ケアを行います（時間は状態により調整します）。
+              </p>
+
+              <p>
+                身体や心の緊張、感覚にやさしくアプローチしながら、
+                <br />
+                呼吸が深まり、体も心も穏やかに安心できる感覚へと
+                <br />
+                導いていきます。
+              </p>
+
+              <div className="pt-1">
+                <div className="text-[13px] font-semibold text-neutral-900">
+                  このような方に
                 </div>
-                <div className="mt-1 text-[13px] text-neutral-700">
-                  120分／¥143,000
-                </div>
+                <ul className="mt-3 space-y-3">
+                  {[
+                    "毎日忙しく、心や体が休まる場所がない",
+                    "休んでも疲れが抜けない",
+                    "身体の力が抜けない",
+                    "呼吸が浅い感じがする",
+                    "常に気が張っている",
+                    "考えが止まらず、身体が休まらない",
+                    "検査では異常がないがつらい",
+                    "理由の分からない不調が続いている",
+                  ].map((t) => (
+                    <li key={t} className="flex gap-3">
+                      <span className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full bg-neutral-500/70" />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-[12px] text-neutral-600">
+                  ＊性別を問わず受けていただけます
+                </p>
               </div>
 
-              <div className="h-px bg-neutral-200/70" />
+              <div className="pt-2">
+                <div className="text-[13px] font-semibold text-neutral-900">
+                  この時間で大切にしていること
+                </div>
+                <p className="mt-3">
+                  身体には、緊張がほどけたときに現れる
+                  <br />
+                  「静かな感覚」の領域があります。
+                  <br />
+                  そこは、頑張る場所ではなく、
+                  <br />
+                  静かな回復が起こる場所です。
+                </p>
+                <p className="mt-3">
+                  ここで過ごす時間は、
+                  <br />
+                  その状態に近づくことを目的としています。
+                  <br />
+                  身体の反応を理解の土台としながら、
+                  <br />
+                  緊張や感覚の状態にやさしく寄り添っていきます。
+                </p>
+              </div>
 
-              <div>
-                <div className="text-[12px] tracking-[0.25em] text-neutral-500">
-                  再診
+              <div className="pt-2">
+                <div className="text-[13px] font-semibold text-neutral-900">
+                  🌿 初めての方へ
                 </div>
-                <div className="mt-1 text-[13px] text-neutral-700">
-                  状態に応じてご案内
-                </div>
+                <p className="mt-3">
+                  何かをうまく話そうとしなくても大丈夫です。
+                  <br />
+                  身体の感覚は、言葉になる前から存在しています。
+                </p>
+                <p className="mt-3">
+                  まずは、安心できる感覚を取り戻し、
+                  <br />
+                  ゆったりと呼吸することから始めてみましょう。
+                </p>
+                <p className="mt-3">
+                  身体は本来、自ら調整し、回復しようとする力を備えています。
+                  <br />
+                  安心できる状態の中で、
+                  <br />
+                  その力が働きやすくなるよう、やさしく整えていきます。
+                </p>
               </div>
             </div>
           </div>
+
+          {/* 2回目以降 60分 */}
+          <div className="mt-6 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
+            <div className="text-[15px] font-semibold text-neutral-900">
+              🌿 全身ヒーリング 60分（2回目以降）
+            </div>
+            <div className="mt-1 text-[13px] text-neutral-700">
+              ¥110,000（税込）
+            </div>
+
+            <div className="mt-4 space-y-4 text-[14px] leading-8 text-neutral-700">
+              <p>
+                前回のケア後の体や心の状態を約10分ほど確認した後、
+                <br />
+                50分前後の全身ケアを行います。
+              </p>
+
+              <p>
+                呼吸がさらに深まり、
+                <br />
+                体と心が穏やかに安心できる感覚が
+                <br />
+                安定するよう、やさしく導いていきます。
+              </p>
+
+              <p>
+                身体の中心に静かに意識を向ける時間は、
+                <br />
+                日常ではなかなか持てないものです。
+                <br />
+                ここでは、何かになる必要はなく、
+                <br />
+                ただ「本来の自分に戻る時間」を過ごしていただけます。
+              </p>
+
+              <div className="pt-1">
+                <div className="text-[13px] font-semibold text-neutral-900">
+                  このような方に
+                </div>
+                <ul className="mt-3 space-y-3">
+                  {[
+                    "2回目以降の方",
+                    "心や体の安定的なメンテナンスをしたい",
+                    "自分の内側を見つめる時間が欲しい",
+                    "呼吸を深めたい",
+                    "頭や心をリセットしたい",
+                  ].map((t) => (
+                    <li key={t} className="flex gap-3">
+                      <span className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full bg-neutral-500/70" />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-4 text-[12px] text-neutral-600">
+                  ＊性別を問わず受けていただけます
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 大切なお知らせ */}
+          <div className="mt-6 rounded-2xl bg-white/70 p-6 shadow-sm ring-1 ring-black/5">
+            <div className="text-[15px] font-semibold text-neutral-900">
+              🌱 大切なお知らせ
+            </div>
+            <p className="mt-3 text-[13px] leading-7 text-neutral-700">
+              ※本ケアはクリニックでの医療行為とは異なり、
+              <br />
+              診断や治療を目的としたものではありません。
+              <br />
+              医療的な症状や治療が必要な場合は、
+              <br />
+              適切な医療機関での診療を優先していただき、
+              <br />
+              補完的なサポートとしてご利用ください。
+            </p>
+          </div>
         </section>
 
-        {/* ⑥ 注意書き */}
-        <section className="px-6 pt-8">
-          <p className="text-[12px] leading-6 text-neutral-600">
-            医療行為ではありません。<br />
-            治療や診断を目的としたものではなく、<br />
-            心身の調和をサポートするヒーリングです。
-          </p>
-        </section>
-
-        {/* ⑦ 戻る導線 */}
+        {/* 戻る導線 */}
         <section className="px-6 py-12">
           <Link
             href="/"

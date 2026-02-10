@@ -175,7 +175,7 @@ export default function Home() {
                   <PhotoPlaceholder
                     src="/images/body-hero.png"
                     label="全身ヒーリング"
-                    sublabel="手当て中心のボディワーク"
+                    sublabel="ヒーリング"
                     aspect="aspect-[16/10]"
                   />
                 </div>
@@ -276,14 +276,14 @@ export default function Home() {
             <h2 className="text-2xl font-semibold">アクセス</h2>
 
             <p className="mt-2 text-sm leading-7 text-neutral-600">
-              施術は「ビジネスエアポート代官山」内の個室にて行います（完全予約制）。
+              （完全予約制）
             </p>
 
             <div className="mt-8 grid gap-6">
               <div className="rounded-2xl border border-neutral-200/70 bg-white p-6 text-sm text-neutral-700 shadow-sm">
                 <div className="font-medium text-neutral-900">住所</div>
                 <div className="mt-2">
-                  東京都渋谷区代官山町20-23 Forestgate Daikanyama MAIN棟 3F
+                  東京都渋谷区代官山町20-23 Forestgate Daikanyama MAIN棟 3F　株式会社　Tweedia
                 </div>
 
                 <div className="mt-4 font-medium text-neutral-900">最寄り</div>
